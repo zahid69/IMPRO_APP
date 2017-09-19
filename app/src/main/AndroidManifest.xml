@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itechmandiri.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/coins"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/coins"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity  android:theme="@style/AppTheme2" android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.MenuCalendar"
+            android:label="Calendar"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Alerts"
+            android:label="Alerts"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Opportunities"
+            android:label="Opportunities"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Tasks"
+            android:label="Draft"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.TaskOL" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.TaskOL" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Contacts"
+            android:label="Contacts"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.AroundMe"
+            android:label="Around Me"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Customers"
+            android:label="Customers"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Analytics"
+            android:label="Analytics"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Leads"
+            android:label="Leads"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Forecast"
+            android:label="Forecast"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Help"
+            android:label="Help">
+        </activity>
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Setting"
+            android:label="Setting"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.AddTasks"
+            android:label="Add Tasks"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.Tasks" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.Tasks" />
+        </activity>
+
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Detail_Tasks"
+            android:label="Detail Tasks"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.Tasks" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.Tasks" />
+        </activity>
+
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.MainActivity2"
+            android:label="Customers"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+
+
+
+
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.TaskOL"
+            android:label="Tasks"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Adapter.ListView"
+            android:label="List"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.itechmandiri.myapplication.Activity.Update_Tasks"
+            android:label="Update Tasks"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="com.itechmandiri.myapplication.Activity.TaskOL" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.itechmandiri.myapplication.Activity.TaskOL" />
+        </activity>
+
+        <receiver android:name=".Connection.NetworkStateChecker">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

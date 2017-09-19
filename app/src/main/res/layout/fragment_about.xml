@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#E6EAED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:text="Dalam hal ini, IM Project membutuhkan teknologi yang dapat merekam proses kinerja para sales saat bekerja di lapangan, tidak hanya sales akan tetapi untuk semua karyawan. Maka berdasarkan kebutuhan tersebut dibuatlah aplikasi Employe Activity Record System untuk menjembatani kebutuhan perusahaan dalam merekam hasil kinerja karyawan terhadap pekerjaan yang dilakukan sehari-hari. Aplikasi Employe Activity Record System dibuat berdasarkan metode waterfall modelling yang didalamnya terdapat beberapa tahapan pengembangan berupa perencanaan, analisa kebutuhan, perancangan desain aplikasi, implementasi, pemeliharaan aplikasi. Tahapan tersebut digunakan untuk menunjang dan mempermudah proses pembuatan aplikasi sesuai dengan kebutuhan perusahaan, sehingga dapat menghasilkan aplikasi employe activity record system yang memiliki fitur pengelolaan data employe, data calon pelanggan, data penyedia, dan data pencapaian karyawan. Hasil dari tahapan-tahapan berupa Aplikasi Employe Activity Record System berbasis mobile yang memiliki fitur pengelolaan data karyawan untuk mendapatkan hasil survey yang nantinya dimanfaatkan untuk membuat sebuah keputusan dari internal perusahaan.">
+            </TextView>
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="email : it@paradiseperkasa.com"
+                android:textSize="20px" >
+            </TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
